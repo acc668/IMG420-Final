@@ -1,6 +1,7 @@
 # IMG420-Final
 
 Must Include:
+
 • Project title and team member names
 • Concise description of module functionality
 • Features list with screenshots/GIFs
