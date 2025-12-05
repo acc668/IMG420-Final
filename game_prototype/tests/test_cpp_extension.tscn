@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvxk3y8j6qn0f"]
+
+[ext_resource type="Script" path="res://tests/test_cpp_extension.gd" id="1_test_cpp"]
+
+[node name="TestCppExtension" type="Node2D"]
+script = ExtResource("1_test_cpp")
+

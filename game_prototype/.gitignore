@@ -1,0 +1,61 @@
+# Godot 4.x
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+.mono/
+data_*/
+*.translation
+
+# API Keys and Sensitive Data (NEVER COMMIT THESE!)
+.env
+api_config.json
+*_api_key.txt
+
+# C++ Build Artifacts (Users will build these)
+necronomicore/bin/
+necronomicore/godot-cpp/
+necronomicore/.sconsign.dblite
+*.obj
+*.o
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exp
+*.pdb
+*.ilk
+
+# Build System
+.scons_cache/
+.sconsign.dblite
+
+# C# (Godot generates these)
+*.csproj
+*.sln
+.vs/
+
+# IDE Files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Godot Import Files (Auto-generated)
+*.import
+*.uid
+
+# Temporary Files
+*.tmp
+*~
+
+# OS Specific
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Disabled Files (from our cleanup)
+*.disabled

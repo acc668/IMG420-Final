@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://bemkuscy7lbuv"]
+
+[node name="SimpleGameStart" type="Node2D"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Background" type="ColorRect" parent="UI"]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.1, 0.08, 0.12, 1)
+
+[node name="Title" type="Label" parent="UI"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 520.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 32
+text = "Fungal Depths: AI Dungeon Crawler"
+horizontal_alignment = 1
+
+[node name="StatsPanel" type="Panel" parent="UI"]
+offset_left = 20.0
+offset_top = 80.0
+offset_right = 320.0
+offset_bottom = 160.0
+
+[node name="FloorLabel" type="Label" parent="UI/StatsPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 290.0
+offset_bottom = 35.0
+theme_override_font_sizes/font_size = 20
+text = "Floor: 1"
+
+[node name="GoldLabel" type="Label" parent="UI/StatsPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 45.0
+offset_right = 290.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 20
+text = "Gold: 100"
+
+[node name="ActionPanel" type="Panel" parent="UI"]
+offset_left = 340.0
+offset_top = 80.0
+offset_right = 1132.0
+offset_bottom = 160.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/ActionPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 782.0
+offset_bottom = 70.0
+theme_override_constants/separation = 10
+
+[node name="ExploreButton" type="Button" parent="UI/ActionPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "🔍 Explore"
+
+[node name="LootButton" type="Button" parent="UI/ActionPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "📦 Find Loot"
+
+[node name="TalkButton" type="Button" parent="UI/ActionPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "💬 Talk to NPC"
+
+[node name="DescendButton" type="Button" parent="UI/ActionPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "⬇️ Descend"
+
+[node name="QuitButton" type="Button" parent="UI/ActionPanel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "❌ Quit"
+
+[node name="LogPanel" type="Panel" parent="UI"]
+offset_left = 20.0
+offset_top = 180.0
+offset_right = 1132.0
+offset_bottom = 628.0
+
+[node name="LogText" type="RichTextLabel" parent="UI/LogPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 1102.0
+offset_bottom = 438.0
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+scroll_following = true
+
+[connection signal="pressed" from="UI/ActionPanel/HBoxContainer/ExploreButton" to="." method="_on_explore_button_pressed"]
+[connection signal="pressed" from="UI/ActionPanel/HBoxContainer/LootButton" to="." method="_on_loot_button_pressed"]
+[connection signal="pressed" from="UI/ActionPanel/HBoxContainer/TalkButton" to="." method="_on_talk_button_pressed"]
+[connection signal="pressed" from="UI/ActionPanel/HBoxContainer/DescendButton" to="." method="_on_descend_button_pressed"]
+[connection signal="pressed" from="UI/ActionPanel/HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
