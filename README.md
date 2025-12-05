@@ -23,6 +23,9 @@ This project features a **custom C++ GDExtension** that integrates OpenAI's GPT 
 ---
 
 ## Features
+<img width="234" height="290" alt="image" src="https://github.com/user-attachments/assets/37e0e2c2-8592-4db6-9333-9b808ac39df6" />
+<img width="220" height="223" alt="image" src="https://github.com/user-attachments/assets/14c696f4-d381-47e1-ba34-5e88db5a0658" />
+<img width="497" height="445" alt="image" src="https://github.com/user-attachments/assets/9bd02205-d51c-4a3b-adbd-253c7f514ae4" />
 
 ### AI-Powered Systems
 
